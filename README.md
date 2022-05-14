@@ -1,1 +1,1 @@
-"# digit-classification" 
+# digit-classification
