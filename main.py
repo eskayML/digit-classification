@@ -13,8 +13,7 @@ im = cv2.resize(im, (28,28))
 #####normalize data
 im = im/255
 im = np.array(im)
-print(im)
-
+im = im.reshape(-1,784)
 prediction = model.predict(im)
 print(prediction)
 cv2.imshow('Image', im)
