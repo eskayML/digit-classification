@@ -8,13 +8,15 @@ model = keras.models.load_model('./digit_classification.h5')
 image_path = 'test_images/img_1.png'
 im = cv2.imread(image_path)
 im = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
-im = cv2.resize(im, (28,28))
+im = cv2.resize(im, (28, 28))
 
-#####normalize data
+# normalize data
 im = im/255
 im = np.array(im)
-im = im.reshape(-1,784)
-prediction = model.predict(im)
+print('The array is ', end='')
+print(im.shape)
+print(im)
+prediction = model.predict([im])
 print(prediction)
 cv2.imshow('Image', im)
 cv2.waitKey(0)
