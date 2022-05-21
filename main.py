@@ -3,16 +3,14 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 from tensorflow import keras
-model = keras.models.load_model('./digit_classification.h5')
+model = keras.models.load_model('./first_convnet_model_with_mnist_digit.h5')
 
 print(model.summary())
-image_path = 'test_images/img_3.PNG'
+image_path = 'test_images/img_1.PNG'
 im = cv2.imread(image_path)
 im = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
 im = cv2.resize(im, (28, 28))
 # cv2.imshow('Number', im)
-
-
 
 
 ######### NORMALIZE DATA
