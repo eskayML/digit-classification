@@ -1,6 +1,6 @@
 
 # digit-classification
-_using only dense layers...._
+Handwritten digit detection using neural networks in python-keras
 
 > New update, Just added CNN layers to the model
 
