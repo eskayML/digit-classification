@@ -1,5 +1,5 @@
 
 # digit-classification
 ![img](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdV3gwbk6XPyRXXtwfrdZrVdV3DIV1Zrhbdg&s)
-Handwritten digit recognition using neural networks in python and tf-keras
+Handwritten digit recognition using neural networks in python and tensorflow-keras
 
